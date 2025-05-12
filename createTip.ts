@@ -25,7 +25,7 @@ async function createTip() {
       },
     ]);
 
-    const shouldScaffoldFromTwitter = await enquirer.prompt<{ shouldScaffoldFromTwitter: boolean }>({
+    const { shouldScaffoldFromTwitter } = await enquirer.prompt<{ shouldScaffoldFromTwitter: boolean }>({
       type: 'confirm',
       name: 'shouldScaffoldFromTwitter',
       message: 'Do you want to scaffold from a Twitter post?',
